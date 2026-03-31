@@ -1,2 +1,25 @@
-# Stock-Sentimient-Analysis
-Built a Stock Sentiment Analysis system using Python and NLP (VADER) to analyze the impact of financial news sentiment on stock returns. Developed an interactive Streamlit dashboard to visualize price trends, sentiment distribution, and return analysis
+# 📊 Stock Sentiment Analysis
+
+This project analyzes how financial news sentiment affects stock prices.
+
+## 🔍 Features
+- Stock data collection using yfinance
+- News sentiment analysis using NLP (VADER)
+- Data merging and return analysis
+- Interactive dashboard using Streamlit
+
+## 🛠 Tech Stack
+- Python
+- Pandas
+- NLTK
+- Streamlit
+- Plotly
+
+## 📈 Output
+- Sentiment vs stock return analysis
+- Interactive dashboard visualization
+
+## 🚀 Run Project
+
+```bash
+streamlit run dashboard/app.py
