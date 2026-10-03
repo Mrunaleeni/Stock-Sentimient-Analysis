@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+.env
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large model cache (HuggingFace downloads)
+# These are downloaded automatically on first run — don't commit them
+*.bin
+*.safetensors
+
+# Keep data/processed/ — these small JSON/CSV files are useful for
+# running the dashboard without re-running FinBERT
+# If you want to exclude them instead, uncomment:
+# data/processed/

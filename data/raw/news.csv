@@ -1,6 +1,61 @@
-Date,Headline
-2022-01-03,Reliance reports strong quarterly profit
-2022-01-04,TCS signs major deal with global client
-2022-01-05,Infosys shares fall after weak guidance
-2022-01-06,HDFC Bank shows steady growth in earnings
-2022-01-07,ICICI Bank stock rises on strong results
+Date,Headline,Stock
+2022-01-03,Reliance reports strong quarterly profit beating all estimates,RELIANCE
+2022-01-04,Reliance Jio subscriber growth surges to record high in Q3,RELIANCE
+2022-01-05,Reliance Industries acquires majority stake in retail startup,RELIANCE
+2022-01-06,Reliance stock falls after oil refining margins disappoint,RELIANCE
+2022-01-07,Reliance Green Energy plans massive solar capacity expansion,RELIANCE
+2022-01-10,Reliance faces regulatory probe over telecom pricing practices,RELIANCE
+2022-01-11,Reliance Industries posts 15% decline in net profit for quarter,RELIANCE
+2022-01-12,Reliance new commerce unit shows strong traction among kirana stores,RELIANCE
+2022-01-13,Mukesh Ambani hints at Jio IPO within two years,RELIANCE
+2022-01-14,Reliance shares slide on concerns about rising crude oil prices,RELIANCE
+2022-01-03,TCS signs major deal with global client worth $1.5 billion,TCS
+2022-01-04,TCS reports record revenue in Q3 led by BFSI and retail verticals,TCS
+2022-01-05,TCS attrition rises to 15% raising concerns about talent retention,TCS
+2022-01-06,TCS announces $1 billion share buyback program,TCS
+2022-01-07,TCS wins cloud transformation contract with European bank,TCS
+2022-01-10,TCS Q3 profit falls short of analyst expectations,TCS
+2022-01-11,TCS to hire 40000 freshers in FY23 amid strong demand,TCS
+2022-01-12,TCS faces lawsuit over alleged data breach at US client,TCS
+2022-01-13,TCS launches new AI-powered platform for supply chain management,TCS
+2022-01-14,TCS management warns of macroeconomic headwinds in H2 FY23,TCS
+2022-01-03,Infosys shares fall after weak revenue guidance for Q4,INFOSYS
+2022-01-04,Infosys wins $400 million deal with Australian government,INFOSYS
+2022-01-05,Infosys Q3 results beat estimates on margin expansion,INFOSYS
+2022-01-06,Infosys CEO Salil Parekh gets raise as board backs performance,INFOSYS
+2022-01-07,Infosys faces US visa rejection surge hitting onsite deployment,INFOSYS
+2022-01-10,Infosys announces partnership with SAP for cloud ERP rollout,INFOSYS
+2022-01-11,Infosys misses earnings estimates as expenses surge,INFOSYS
+2022-01-12,Infosys stock drops sharply after whistleblower complaint emerges,INFOSYS
+2022-01-13,Infosys digital segment revenue crosses $3 billion milestone,INFOSYS
+2022-01-14,Infosys campus hiring drive attracts record 300000 applicants,INFOSYS
+2022-01-03,HDFC Bank shows steady growth in earnings for third consecutive quarter,HDFC
+2022-01-04,HDFC Bank merger with HDFC Ltd receives final regulatory approval,HDFC
+2022-01-05,HDFC Bank net interest margin narrows amid rising funding costs,HDFC
+2022-01-06,HDFC Bank credit card spending hits all-time high in festive quarter,HDFC
+2022-01-07,HDFC Bank gross NPA ratio rises to 1.4% raising asset quality concerns,HDFC
+2022-01-10,HDFC Bank appoints new CFO as part of leadership restructuring,HDFC
+2022-01-11,HDFC Bank Q3 net profit grows 18% year on year,HDFC
+2022-01-12,HDFC Bank faces RBI action for non-compliance with digital banking norms,HDFC
+2022-01-13,HDFC Bank launches new SME lending platform targeting small businesses,HDFC
+2022-01-14,HDFC Bank stock rallies after Morgan Stanley upgrades to overweight,HDFC
+2022-01-03,ICICI Bank stock rises on strong Q3 results and loan growth,ICICI
+2022-01-04,ICICI Bank retail loan book grows 20% year on year driven by home loans,ICICI
+2022-01-05,ICICI Bank sees surge in mobile banking users crossing 30 million mark,ICICI
+2022-01-06,ICICI Bank Q3 provisions fall sharply signaling improved asset quality,ICICI
+2022-01-07,ICICI Bank shares decline after CEO cautions on unsecured lending risks,ICICI
+2022-01-10,ICICI Bank under scrutiny for alleged evergreening of corporate loans,ICICI
+2022-01-11,ICICI Bank profit jumps 25% beating street expectations by wide margin,ICICI
+2022-01-12,ICICI Prudential Life Insurance arm posts weak quarterly numbers,ICICI
+2022-01-13,ICICI Bank launches zero-fee digital savings account for millennials,ICICI
+2022-01-14,ICICI Bank stock hits 52-week high after strong brokerage upgrades,ICICI
+2022-01-17,Reliance Jio 5G rollout accelerates ahead of government deadline,RELIANCE
+2022-01-18,TCS bags $500 million digital transformation deal from UK insurer,TCS
+2022-01-19,Infosys raises full-year revenue guidance on strong deal pipeline,INFOSYS
+2022-01-20,HDFC Bank sees strong Q3 retail disbursements despite rate hike,HDFC
+2022-01-21,ICICI Bank credit costs hit multi-year low boosting profitability,ICICI
+2022-01-24,Reliance stock under pressure as FII outflows accelerate,RELIANCE
+2022-01-25,TCS stock dips after key client announces budget freeze,TCS
+2022-01-26,Infosys large deal wins hit record $3.3 billion in Q3,INFOSYS
+2022-01-27,HDFC Bank faces stiff competition from fintechs in personal loans,HDFC
+2022-01-28,ICICI Bank raises $2 billion via QIP at premium to market price,ICICI

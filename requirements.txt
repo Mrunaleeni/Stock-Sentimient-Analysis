@@ -1,0 +1,33 @@
+# Market Pulse — Stock Sentiment Analysis
+# Pin minor versions for reproducibility; patch updates are safe.
+
+# ── Data & numerics ────────────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# ── Stock data ─────────────────────────────────────────────────────────────
+yfinance==0.2.40
+
+# ── NLP — VADER ────────────────────────────────────────────────────────────
+nltk==3.8.1
+
+# ── NLP — FinBERT (ProsusAI/finbert via HuggingFace) ──────────────────────
+# torch: CPU-only wheel is sufficient; swap for a CUDA build if you have a GPU
+torch==2.3.1
+transformers==4.41.2
+# sentencepiece is required by some tokeniser configs
+sentencepiece==0.2.0
+
+# ── Machine learning ───────────────────────────────────────────────────────
+scikit-learn==1.5.0
+
+# ── Dashboard ──────────────────────────────────────────────────────────────
+streamlit==1.35.0
+plotly==5.22.0
+
+# ── Visualisation (standalone scripts) ────────────────────────────────────
+matplotlib==3.9.0
+
+# ── Word clouds (preprocessing helper) ────────────────────────────────────
+wordcloud==1.9.3

@@ -1,0 +1,67 @@
+{
+  "RELIANCE": {
+    "finbert": {
+      "n_samples": 12,
+      "r2_train": 0.0181,
+      "r2_cv_mean": -1.741,
+      "r2_cv_std": 2.6123,
+      "mae": 0.008688,
+      "coefficients": {
+        "fb_score": -0.002107
+      },
+      "intercept": 0.003769
+    }
+  },
+  "TCS": {
+    "finbert": {
+      "n_samples": 12,
+      "r2_train": 0.0001,
+      "r2_cv_mean": -20.7577,
+      "r2_cv_std": 19.7887,
+      "mae": 0.014168,
+      "coefficients": {
+        "fb_score": 0.000193
+      },
+      "intercept": 0.000222
+    }
+  },
+  "INFOSYS": {
+    "finbert": {
+      "n_samples": 11,
+      "r2_train": 0.4296,
+      "r2_cv_mean": -5.5043,
+      "r2_cv_std": 8.6546,
+      "mae": 0.009633,
+      "coefficients": {
+        "fb_score": -0.013014
+      },
+      "intercept": 0.000515
+    }
+  },
+  "HDFC": {
+    "finbert": {
+      "n_samples": 12,
+      "r2_train": 0.4078,
+      "r2_cv_mean": -4.1467,
+      "r2_cv_std": 7.7815,
+      "mae": 0.006789,
+      "coefficients": {
+        "fb_score": 0.011027
+      },
+      "intercept": -0.003465
+    }
+  },
+  "ICICI": {
+    "finbert": {
+      "n_samples": 12,
+      "r2_train": 0.0057,
+      "r2_cv_mean": -4.9678,
+      "r2_cv_std": 7.9285,
+      "mae": 0.008858,
+      "coefficients": {
+        "fb_score": -0.000888
+      },
+      "intercept": 0.006172
+    }
+  }
+}

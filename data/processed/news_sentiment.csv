@@ -1,0 +1,61 @@
+Date,Headline,Stock,cleaned_headline,vader_score,vader_label,fb_score,fb_label
+2022-01-03,Reliance reports strong quarterly profit beating all estimates,RELIANCE,reliance reports strong quarterly profit beating all estimates,0.4939,Positive,0.9331,Positive
+2022-01-04,Reliance Jio subscriber growth surges to record high in Q3,RELIANCE,reliance jio subscriber growth surges to record high in q3,0.3818,Positive,0.9259,Positive
+2022-01-05,Reliance Industries acquires majority stake in retail startup,RELIANCE,reliance industries acquires majority stake in retail startup,0.0,Neutral,0.0468,Neutral
+2022-01-06,Reliance stock falls after oil refining margins disappoint,RELIANCE,reliance stock falls after oil refining margins disappoint,-0.4019,Negative,-0.9476,Negative
+2022-01-07,Reliance Green Energy plans massive solar capacity expansion,RELIANCE,reliance green energy plans massive solar capacity expansion,0.2732,Positive,0.504,Positive
+2022-01-10,Reliance faces regulatory probe over telecom pricing practices,RELIANCE,reliance faces regulatory probe over telecom pricing practices,0.0,Neutral,-0.9324,Negative
+2022-01-11,Reliance Industries posts 15% decline in net profit for quarter,RELIANCE,reliance industries posts 15 decline in net profit for quarter,0.4404,Positive,-0.9663,Negative
+2022-01-12,Reliance new commerce unit shows strong traction among kirana stores,RELIANCE,reliance new commerce unit shows strong traction among kirana stores,0.5106,Positive,0.9389,Positive
+2022-01-13,Mukesh Ambani hints at Jio IPO within two years,RELIANCE,mukesh ambani hints at jio ipo within two years,0.0,Neutral,0.052,Neutral
+2022-01-14,Reliance shares slide on concerns about rising crude oil prices,RELIANCE,reliance shares slide on concerns about rising crude oil prices,-0.3612,Negative,-0.9416,Negative
+2022-01-03,TCS signs major deal with global client worth $1.5 billion,TCS,tcs signs major deal with global client worth 15 billion,0.2263,Positive,0.92,Positive
+2022-01-04,TCS reports record revenue in Q3 led by BFSI and retail verticals,TCS,tcs reports record revenue in q3 led by bfsi and retail verticals,0.0,Neutral,0.9291,Positive
+2022-01-05,TCS attrition rises to 15% raising concerns about talent retention,TCS,tcs attrition rises to 15 raising concerns about talent retention,0.4215,Positive,-0.2669,Negative
+2022-01-06,TCS announces $1 billion share buyback program,TCS,tcs announces 1 billion share buyback program,0.296,Positive,0.0845,Neutral
+2022-01-07,TCS wins cloud transformation contract with European bank,TCS,tcs wins cloud transformation contract with european bank,0.5719,Positive,0.9364,Positive
+2022-01-10,TCS Q3 profit falls short of analyst expectations,TCS,tcs q3 profit falls short of analyst expectations,0.4404,Positive,-0.9549,Negative
+2022-01-11,TCS to hire 40000 freshers in FY23 amid strong demand,TCS,tcs to hire 40000 freshers in fy23 amid strong demand,0.4215,Positive,0.9194,Positive
+2022-01-12,TCS faces lawsuit over alleged data breach at US client,TCS,tcs faces lawsuit over alleged data breach at us client,-0.2263,Negative,-0.9415,Negative
+2022-01-13,TCS launches new AI-powered platform for supply chain management,TCS,tcs launches new aipowered platform for supply chain management,0.0,Neutral,0.5487,Positive
+2022-01-14,TCS management warns of macroeconomic headwinds in H2 FY23,TCS,tcs management warns of macroeconomic headwinds in h2 fy23,-0.1027,Negative,-0.9551,Negative
+2022-01-03,Infosys shares fall after weak revenue guidance for Q4,INFOSYS,infosys shares fall after weak revenue guidance for q4,-0.1779,Negative,-0.9619,Negative
+2022-01-04,Infosys wins $400 million deal with Australian government,INFOSYS,infosys wins 400 million deal with australian government,0.5719,Positive,0.8581,Positive
+2022-01-05,Infosys Q3 results beat estimates on margin expansion,INFOSYS,infosys q3 results beat estimates on margin expansion,0.0,Neutral,0.9034,Positive
+2022-01-06,Infosys CEO Salil Parekh gets raise as board backs performance,INFOSYS,infosys ceo salil parekh gets raise as board backs performance,-0.0516,Negative,0.0006,Neutral
+2022-01-07,Infosys faces US visa rejection surge hitting onsite deployment,INFOSYS,infosys faces us visa rejection surge hitting onsite deployment,-0.5423,Negative,-0.7475,Negative
+2022-01-10,Infosys announces partnership with SAP for cloud ERP rollout,INFOSYS,infosys announces partnership with sap for cloud erp rollout,0.0,Neutral,0.8006,Positive
+2022-01-11,Infosys misses earnings estimates as expenses surge,INFOSYS,infosys misses earnings estimates as expenses surge,-0.2263,Negative,-0.9613,Negative
+2022-01-12,Infosys stock drops sharply after whistleblower complaint emerges,INFOSYS,infosys stock drops sharply after whistleblower complaint emerges,-0.296,Negative,-0.9587,Negative
+2022-01-13,Infosys digital segment revenue crosses $3 billion milestone,INFOSYS,infosys digital segment revenue crosses 3 billion milestone,0.0,Neutral,0.3362,Neutral
+2022-01-14,Infosys campus hiring drive attracts record 300000 applicants,INFOSYS,infosys campus hiring drive attracts record 300000 applicants,0.4019,Positive,0.3721,Neutral
+2022-01-03,HDFC Bank shows steady growth in earnings for third consecutive quarter,HDFC,hdfc bank shows steady growth in earnings for third consecutive quarter,0.3818,Positive,0.9386,Positive
+2022-01-04,HDFC Bank merger with HDFC Ltd receives final regulatory approval,HDFC,hdfc bank merger with hdfc ltd receives final regulatory approval,0.4767,Positive,0.6929,Positive
+2022-01-05,HDFC Bank net interest margin narrows amid rising funding costs,HDFC,hdfc bank net interest margin narrows amid rising funding costs,0.4588,Positive,-0.8947,Negative
+2022-01-06,HDFC Bank credit card spending hits all-time high in festive quarter,HDFC,hdfc bank credit card spending hits alltime high in festive quarter,0.6808,Positive,0.9172,Positive
+2022-01-07,HDFC Bank gross NPA ratio rises to 1.4% raising asset quality concerns,HDFC,hdfc bank gross npa ratio rises to 14 raising asset quality concerns,-0.1531,Negative,0.925,Positive
+2022-01-10,HDFC Bank appoints new CFO as part of leadership restructuring,HDFC,hdfc bank appoints new cfo as part of leadership restructuring,0.0,Neutral,0.0096,Neutral
+2022-01-11,HDFC Bank Q3 net profit grows 18% year on year,HDFC,hdfc bank q3 net profit grows 18 year on year,0.4404,Positive,0.9235,Positive
+2022-01-12,HDFC Bank faces RBI action for non-compliance with digital banking norms,HDFC,hdfc bank faces rbi action for noncompliance with digital banking norms,0.0,Neutral,-0.9474,Negative
+2022-01-13,HDFC Bank launches new SME lending platform targeting small businesses,HDFC,hdfc bank launches new sme lending platform targeting small businesses,0.0,Neutral,0.4693,Neutral
+2022-01-14,HDFC Bank stock rallies after Morgan Stanley upgrades to overweight,HDFC,hdfc bank stock rallies after morgan stanley upgrades to overweight,-0.3612,Negative,0.6208,Positive
+2022-01-03,ICICI Bank stock rises on strong Q3 results and loan growth,ICICI,icici bank stock rises on strong q3 results and loan growth,0.7096,Positive,0.9148,Positive
+2022-01-04,ICICI Bank retail loan book grows 20% year on year driven by home loans,ICICI,icici bank retail loan book grows 20 year on year driven by home loans,0.0,Neutral,0.9332,Positive
+2022-01-05,ICICI Bank sees surge in mobile banking users crossing 30 million mark,ICICI,icici bank sees surge in mobile banking users crossing 30 million mark,0.0,Neutral,0.9277,Positive
+2022-01-06,ICICI Bank Q3 provisions fall sharply signaling improved asset quality,ICICI,icici bank q3 provisions fall sharply signaling improved asset quality,0.6808,Positive,-0.8967,Negative
+2022-01-07,ICICI Bank shares decline after CEO cautions on unsecured lending risks,ICICI,icici bank shares decline after ceo cautions on unsecured lending risks,-0.3612,Negative,-0.9395,Negative
+2022-01-10,ICICI Bank under scrutiny for alleged evergreening of corporate loans,ICICI,icici bank under scrutiny for alleged evergreening of corporate loans,0.0,Neutral,-0.9077,Negative
+2022-01-11,ICICI Bank profit jumps 25% beating street expectations by wide margin,ICICI,icici bank profit jumps 25 beating street expectations by wide margin,-0.0258,Neutral,0.904,Positive
+2022-01-12,ICICI Prudential Life Insurance arm posts weak quarterly numbers,ICICI,icici prudential life insurance arm posts weak quarterly numbers,-0.4404,Negative,-0.9636,Negative
+2022-01-13,ICICI Bank launches zero-fee digital savings account for millennials,ICICI,icici bank launches zerofee digital savings account for millennials,0.0,Neutral,0.1433,Neutral
+2022-01-14,ICICI Bank stock hits 52-week high after strong brokerage upgrades,ICICI,icici bank stock hits 52week high after strong brokerage upgrades,0.5106,Positive,0.8576,Positive
+2022-01-17,Reliance Jio 5G rollout accelerates ahead of government deadline,RELIANCE,reliance jio 5g rollout accelerates ahead of government deadline,0.0,Neutral,0.5023,Positive
+2022-01-18,TCS bags $500 million digital transformation deal from UK insurer,TCS,tcs bags 500 million digital transformation deal from uk insurer,0.0,Neutral,0.8826,Positive
+2022-01-19,Infosys raises full-year revenue guidance on strong deal pipeline,INFOSYS,infosys raises fullyear revenue guidance on strong deal pipeline,0.5106,Positive,0.8563,Positive
+2022-01-20,HDFC Bank sees strong Q3 retail disbursements despite rate hike,HDFC,hdfc bank sees strong q3 retail disbursements despite rate hike,0.5106,Positive,0.9321,Positive
+2022-01-21,ICICI Bank credit costs hit multi-year low boosting profitability,ICICI,icici bank credit costs hit multiyear low boosting profitability,0.6124,Positive,0.7696,Positive
+2022-01-24,Reliance stock under pressure as FII outflows accelerate,RELIANCE,reliance stock under pressure as fii outflows accelerate,-0.296,Negative,-0.9356,Negative
+2022-01-25,TCS stock dips after key client announces budget freeze,TCS,tcs stock dips after key client announces budget freeze,0.0516,Positive,-0.9127,Negative
+2022-01-26,Infosys large deal wins hit record $3.3 billion in Q3,INFOSYS,infosys large deal wins hit record 33 billion in q3,0.5719,Positive,0.9114,Positive
+2022-01-27,HDFC Bank faces stiff competition from fintechs in personal loans,HDFC,hdfc bank faces stiff competition from fintechs in personal loans,0.0,Neutral,-0.5919,Negative
+2022-01-28,ICICI Bank raises $2 billion via QIP at premium to market price,ICICI,icici bank raises 2 billion via qip at premium to market price,0.0,Neutral,0.6535,Positive

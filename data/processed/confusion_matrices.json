@@ -1,0 +1,62 @@
+{
+  "finbert": {
+    "accuracy": 0.8333,
+    "report": {
+      "Positive": {
+        "precision": 0.9666666666666667,
+        "recall": 0.7631578947368421,
+        "f1-score": 0.8529411764705882,
+        "support": 38.0
+      },
+      "Neutral": {
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f1-score": 0.2,
+        "support": 1.0
+      },
+      "Negative": {
+        "precision": 0.9523809523809523,
+        "recall": 0.9523809523809523,
+        "f1-score": 0.9523809523809523,
+        "support": 21.0
+      },
+      "accuracy": 0.8333333333333334,
+      "macro avg": {
+        "precision": 0.6767195767195767,
+        "recall": 0.9051796157059314,
+        "f1-score": 0.6684407096171802,
+        "support": 60.0
+      },
+      "weighted avg": {
+        "precision": 0.9474074074074075,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.8768627450980393,
+        "support": 60.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "Positive",
+        "Neutral",
+        "Negative"
+      ],
+      "matrix": [
+        [
+          29,
+          8,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          20
+        ]
+      ]
+    }
+  }
+}
