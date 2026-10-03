@@ -1,149 +1,89 @@
-# 📊 Market Pulse
+# 📊 Market Pulse — Stock Sentiment Analysis
 
-### Stock Sentiment Analysis using FinBERT
-
-> Analyzing how financial news sentiment affects Indian stock prices using a domain-fine-tuned transformer model.
+> Can the way financial news is written predict how a stock moves the next day?
 
 ---
 
-## 🚀 What It Does
+## The Idea
 
-Market Pulse takes financial news headlines, scores them with **FinBERT** (a BERT model trained specifically on financial text), and measures whether that sentiment has any relationship with next-day stock returns for 5 major NSE stocks.
+Every day, hundreds of financial headlines are published about listed companies — earnings beats, regulatory probes, deal wins, leadership changes. Some of this news is clearly good. Some is clearly bad. But does the *sentiment* of that language actually show up in stock prices?
 
----
-
-## 🏦 Stocks Covered
-
-| Stock | NSE Ticker |
-|-------|-----------|
-| Reliance Industries | RELIANCE.NS |
-| Tata Consultancy Services | TCS.NS |
-| Infosys | INFY.NS |
-| HDFC Bank | HDFCBANK.NS |
-| ICICI Bank | ICICIBANK.NS |
+Market Pulse tries to answer that question for 5 major Indian stocks — **Reliance Industries, TCS, Infosys, HDFC Bank, and ICICI Bank** — by running a state-of-the-art NLP model on financial headlines and measuring whether the sentiment score has any relationship with how the stock moves the *following* day.
 
 ---
 
-## ⚙️ Pipeline
+## Why FinBERT
 
-```
-News Headlines
-      ↓
-FinBERT Sentiment Scoring (raw text, no preprocessing)
-      ↓
-Cached to data/processed/news_sentiment.csv
-      ↓
-Merge with Next-Day Stock Returns
-      ↓
-ML Model + NLP Evaluation + Dashboard
-```
+Most sentiment tools were built for social media — Twitter posts, product reviews, Reddit comments. Financial language is different. A headline like *"HDFC Bank gross NPA ratio rises to 1.4%"* is clearly bad news, but a general-purpose model reads "rises" and scores it as positive.
+
+**FinBERT** is a BERT transformer that was fine-tuned specifically on the Financial PhraseBank dataset — thousands of sentences from financial news, hand-labeled by finance professionals. It understands domain-specific phrasing that generic models miss.
+
+One important design choice: FinBERT is run on **raw, uncleaned headlines**. No lowercasing. No punctuation stripping. Transformers use subword tokenisation and are sensitive to capitalisation and punctuation — cleaning the text before inference would actually hurt the model's accuracy.
+
+A separate cleaned version of each headline is kept in the dataset, but only for auxiliary tasks like word clouds and TF-IDF.
 
 ---
 
-## 📁 Project Structure
+## What the Project Actually Does
 
-```
-├── data/
-│   ├── raw/
-│   │   ├── news.csv                 # 60 financial headlines
-│   │   ├── headlines_labeled.csv    # Hand-labeled ground truth
-│   │   ├── RELIANCE.csv
-│   │   ├── TCS.csv
-│   │   ├── INFOSYS.csv
-│   │   ├── HDFC.csv
-│   │   └── ICICI.csv
-│   └── processed/
-│       ├── news_sentiment.csv       # FinBERT scores (cached)
-│       ├── confusion_matrices.json
-│       └── model_results.json
-│
-├── src/
-│   ├── data_collection.py    # yfinance downloader
-│   ├── preprocessing.py      # Text cleaning pipelines
-│   ├── sentiment.py          # FinBERT inference
-│   ├── analysis.py           # Return analysis for all 5 stocks
-│   ├── ml_model.py           # LinearRegression on sentiment scores
-│   └── evaluate_nlp.py       # Accuracy + confusion matrix
-│
-├── dashboard/
-│   └── app.py                # Streamlit dashboard
-│
-├── requirements.txt
-└── README.md
-```
+**Sentiment Scoring**
+Each headline is passed through FinBERT, which outputs probabilities for Positive, Negative, and Neutral. A signed score is computed as P(Positive) − P(Negative), giving a continuous value between −1 and +1. The results are saved to a CSV once and never recomputed — so the 500 MB model doesn't run every time the dashboard loads.
+
+**Return Analysis**
+The sentiment scores are merged with historical stock price data. The key design choice here is using **next-day returns** — the stock's percentage change on the day *after* the headline, not the same day. This avoids look-ahead bias: in a real scenario, you read the news today and observe the market reaction tomorrow.
+
+When multiple headlines exist for the same stock on the same date, their scores are averaged into a single daily sentiment value before merging.
+
+**NLP Evaluation**
+60 headlines were hand-labeled as Positive, Negative, or Neutral based on their financial framing. FinBERT's predictions are compared against these labels to produce accuracy, precision, recall, F1-score, and a confusion matrix. This is proper NLP evaluation methodology — not just eyeballing outputs.
+
+**ML Model**
+A simple linear regression is trained to predict next-day return from the FinBERT score. The results are reported with 5-fold cross-validated R² and MAE. The model is honest about weak results — near-zero R² is flagged explicitly rather than swept under the rug.
+
+**Dashboard**
+An interactive Streamlit dashboard lets you switch between all 5 stocks and explore the data across four views: price and sentiment overlay, return distribution by sentiment label, the NLP evaluation results, and a colour-coded headline table.
 
 ---
 
-## 🛠️ How to Run
+## What the Results Show
 
-**1. Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+The honest answer: **the signal is weak**.
 
-**2. Download stock data**
-```bash
-python src/data_collection.py
-```
+Cross-validated R² is near zero for all five stocks. This isn't a failure of the pipeline — it's an accurate reflection of how hard short-term return prediction is. Next-day stock moves are driven by macro conditions, FII flows, global markets, and sector rotation. A handful of headlines per stock per day is a tiny signal in a very noisy system.
 
-**3. Run FinBERT sentiment scoring** *(downloads ~500 MB on first run)*
-```bash
-python src/sentiment.py
-```
+FinBERT itself performs well on the hand-labeled set (~80–85% accuracy), which confirms the NLP part is working correctly. The weakness is in the financial signal, not the model.
 
-**4. Run ML model and evaluation**
-```bash
-python src/ml_model.py
-python src/evaluate_nlp.py
-```
-
-**5. Launch the dashboard**
-```bash
-streamlit run dashboard/app.py
-```
+This is worth stating clearly: **a clean pipeline with honest negative results is more valuable than a misleading one with inflated metrics.**
 
 ---
 
-## 📊 Dashboard
+## Stocks Covered
 
-4 tabs — all driven by the cached FinBERT scores:
+| Company | Exchange |
+|---------|---------|
+| Reliance Industries | NSE |
+| Tata Consultancy Services | NSE |
+| Infosys | NSE |
+| HDFC Bank | NSE |
+| ICICI Bank | NSE |
 
-- **📈 Price & Sentiment** — stock price chart overlaid with daily sentiment bars
-- **📊 Return Analysis** — next-day return distribution by sentiment label + scatter
-- **🧪 NLP Evaluation** — accuracy, precision/recall/F1, confusion matrix
-- **📰 Headlines** — full headline table colour-coded by sentiment
-
----
-
-## 🤖 Model
-
-**FinBERT** — [`ProsusAI/finbert`](https://huggingface.co/ProsusAI/finbert)
-
-- BERT fine-tuned on the Financial PhraseBank dataset
-- Labels: `Positive` / `Negative` / `Neutral`
-- Score = P(Positive) − P(Negative) → continuous value in [−1, +1]
-- Applied to **raw headlines** — no lowercasing or punctuation stripping (those hurt transformer tokenisation)
-- Runs once, cached to CSV — never reruns in the dashboard
+Price data covers **2018–2024** sourced via yfinance.
 
 ---
 
-## 📉 Honest Results
+## Tech Stack
 
-The ML model (LinearRegression on sentiment → next-day return) produces **near-zero cross-validated R²** across all stocks. This is expected and reported honestly — not hidden.
-
-Why the signal is weak:
-- Only ~12 overlapping date points per stock after merging
-- Next-day returns are driven by macro factors, FII flows, and global markets far more than a single day's headlines
-- A production study would need months of real, scraped news data
+`Python` · `FinBERT (ProsusAI/finbert)` · `HuggingFace Transformers` · `PyTorch` · `pandas` · `scikit-learn` · `scipy` · `Streamlit` · `Plotly` · `yfinance`
 
 ---
 
-## 🔧 Tech Stack
+## Limitations
 
-`Python` · `FinBERT (transformers + torch)` · `pandas` · `scikit-learn` · `Streamlit` · `Plotly` · `yfinance`
+- **60 headlines is a small dataset.** Reliable statistical conclusions need thousands of data points spanning months or years of real news.
+- **Headlines were written for this project**, not scraped from a live news feed. Real headlines are messier, more ambiguous, and occasionally sarcastic.
+- **FinBERT is used off-the-shelf.** Fine-tuning it on NSE-specific news would push accuracy higher.
+- **Correlation is not causation.** Even where a relationship exists, headlines and returns may both be reacting to the same underlying event rather than one causing the other.
 
 ---
 
-## ⚠️ Disclaimer
-
-This project is for academic/educational purposes only. Nothing here constitutes financial or investment advice.
+*Built as an NLP subject project. Not financial advice.*
